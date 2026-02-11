@@ -155,15 +155,6 @@ DB_PORT=5432
 - Supports: text, images, documents, videos, audio
 - Links to either channels or DM threads
 
-## Upcoming Features
-
-- [ ] WebSocket support for real-time messaging
-- [ ] Pagination for chat history
-- [ ] React frontend
-- [ ] Voice channels
-- [ ] Message reactions
-- [ ] User presence/online status
-
 ## Contributing
 
 1. Fork the repository
@@ -178,6 +169,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Harshith Chegondi
 
-Project Link: [https://github.com/yourusername/HEcho](https://github.com/yourusername/HEcho)
+Project Link: [https://github.com/HarshithCheg/HEcho](https://github.com/HarshithCheg/HEcho)
