@@ -6,3 +6,4 @@ psycopg2 >= 2.9
 Pillow >= 12.1
 python-magic >= 0.4.27
 python-dotenv >= 1.0
+phonenumbers >= 9.0.23
