@@ -5,7 +5,7 @@ class SignUpSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields= ('id', 'uid', 'email', 'username', 'display_name', 'password', 'country_code', 'phone', 'avatar', 'banner', 'date_joined')
-        read_only_fields= ('date_joined')
+        read_only_fields= ('date_joined',)
         extra_kwargs = {
             'password': {'write_only': True}
         }
