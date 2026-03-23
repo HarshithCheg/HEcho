@@ -7,5 +7,5 @@ urlpatterns = [
     path("join/invite/<uuid:code>/", views.JoinServerInviteView.as_view()),
     path("search/", views.SearchPubServerView.as_view()),
     
-    path('<uuid:server_uid>/', include('channels.urls')),
+    path('<uuid:server_uid>/', include('chnls.urls')),
 ]

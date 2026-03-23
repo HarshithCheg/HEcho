@@ -1,6 +1,6 @@
 from django.db import models
 from accounts.models import User
-from channels.models import Channel
+from chnls.models import Channel
 import uuid
 
 # Create your models here.

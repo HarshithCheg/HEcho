@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.exceptions import NotFound, PermissionDenied
 from accounts.models import FriendRequest, User
 from servers.models import Server
-from channels.models import Channel
+from chnls.models import Channel
 from .models import Message
 from .serializers import MessageSerializer, DMSerializer
 

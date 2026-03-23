@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     # Local Apps
     'accounts',
     'servers',
-    'channels',
+    'chnls',
     'chat',
 ]
 
