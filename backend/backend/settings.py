@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne', # must be at first
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +44,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt.token_blacklist', 
-    'corsheaders',   
+    'corsheaders',  
+    # Web-Socketting & Pagination
+    'channels', 
     # Local Apps
     'accounts',
     'servers',
@@ -153,3 +156,13 @@ STATIC_URL = 'static/'
 # media files (uploaded by user)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR/'media'
+
+ASGI_APPLICATION = 'backend.asgi.application'
+CHANNEL_LAYERS = {
+    'default' : {
+        'BACKEND' : 'channels_redis.core.RedisChannelLayer',
+        'CONFIG' : {
+            "hosts" : [('127.0.0.1', 6379)],
+        },
+    },
+}
